@@ -17,7 +17,7 @@ var Web = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
-        <WebView url={this.props.url}/>
+        <WebView scalesPageToFit = {true} url={this.props.url}/>
       </View>
     );
   }

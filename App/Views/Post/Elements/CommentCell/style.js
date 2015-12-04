@@ -44,6 +44,6 @@ module.exports = StyleSheet.create({
   },
   parseHTMLStyle:{
     backgroundColor: '#F6F6EF',
-    textAlign: 'left',
+//    textAlign: 'left',
   },
 });

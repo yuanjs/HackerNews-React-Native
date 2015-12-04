@@ -21,7 +21,7 @@ module.exports = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     marginRight: 10,
-    color: '#FF6600'
+//    color: '#FF6600'
   },
   postsListView:{
     backgroundColor: '#F6F6EF',

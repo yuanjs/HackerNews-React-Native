@@ -17,9 +17,10 @@ var HackerNews = React.createClass({
         style={styles.container}
         tintColor='#FF6600'
         initialRoute={{
-          title: 'Hacker News - Top Stories',
           component: PostsView,
-        }}/>
+          title: 'Hacker News - Top Stories',
+        }}
+        translucent={false}/>
     );
   }
 });
@@ -28,6 +29,7 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F6F6EF',
+//    translucent: "false",
   },
 });
 
