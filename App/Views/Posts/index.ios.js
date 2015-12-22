@@ -17,6 +17,9 @@ var styles = require("./style");
 var api = require("../../Network/api.js");
 var UtilFuncs = require("../../Utils/functions.js");
 
+//Add by Jianshan Yuan for parser html to json of hackernews raw page
+var h2j = require("../../Utils/html2json.js");
+
 //View Elements
 var PostCell = require("./Elements/PostCell");
 
@@ -34,6 +37,8 @@ var ViewReactClass = React.createClass({
     this.fetchData();
   },
   fetchData: function() {
+    console.log("Fetching data...");
+    console.log(h2j.html2json("My fetching data function"));
     fetch(api.REQUEST_URL)
       .then((response) => response.json())
       .then((responseData) => {

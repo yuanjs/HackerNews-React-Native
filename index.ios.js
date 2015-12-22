@@ -5,7 +5,7 @@ var React = require('react-native');
 var {
   AppRegistry,
   StyleSheet,
-  NavigatorIOS,
+  NavigatorIOS
 } = React;
 
 var PostsView = require('./App/Views/Posts');
@@ -18,7 +18,7 @@ var HackerNews = React.createClass({
         tintColor='#FF6600'
         initialRoute={{
           component: PostsView,
-          title: 'Hacker News - Top Stories',
+          title: 'Hacker News - Top Stories'
         }}
         translucent={false}/>
     );
@@ -28,9 +28,8 @@ var HackerNews = React.createClass({
 var styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F6F6EF',
-//    translucent: "false",
-  },
+    backgroundColor: '#F6F6EF'
+  }
 });
 
 AppRegistry.registerComponent('HackerNews', () => HackerNews);
